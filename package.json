@@ -1,12 +1,15 @@
 {
-  "name": "react-template",
+  "name": "organization",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "stylelint": "npx stylelint **/*.{css,scss}",
+    "eslint": "npx eslint --fix .",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^2.2.0",
